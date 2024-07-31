@@ -15,7 +15,7 @@ class EasyDemo: UIView, PopType {
         super.init(frame: frame)
         
         config.direction = .bottom
-//        config.isTapMaskHidden = true
+        config.isTapMaskHidden = true
         
     }
     
