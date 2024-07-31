@@ -14,7 +14,7 @@ class EasyDemo: UIView, PopType {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-//        config.direction = .bottom
+        config.direction = .bottom
 //        config.isTapMaskHidden = true
         
     }
