@@ -13,6 +13,12 @@
 		5775D2CA2C58B3DF0023B1A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5775D2C82C58B3DF0023B1A4 /* Main.storyboard */; };
 		5775D2CC2C58B3E10023B1A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5775D2CB2C58B3E10023B1A4 /* Assets.xcassets */; };
 		5775D2CF2C58B3E10023B1A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5775D2CD2C58B3E10023B1A4 /* LaunchScreen.storyboard */; };
+		5775D2D92C58B4010023B1A4 /* EasyPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775D2D82C58B4010023B1A4 /* EasyPop.swift */; };
+		5775D2DB2C58B4FC0023B1A4 /* PopQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775D2DA2C58B4FC0023B1A4 /* PopQueue.swift */; };
+		5775D2DE2C58C9F00023B1A4 /* EasyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775D2DD2C58C9F00023B1A4 /* EasyDemo.swift */; };
+		5775D2E12C58D4D20023B1A4 /* PopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775D2E02C58D4D10023B1A4 /* PopManager.swift */; };
+		5775D2E32C58D5AE0023B1A4 /* PopType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775D2E22C58D5AE0023B1A4 /* PopType.swift */; };
+		5775D2E52C59DBF30023B1A4 /* ToastPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775D2E42C59DBF30023B1A4 /* ToastPop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		5775D2CB2C58B3E10023B1A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5775D2CE2C58B3E10023B1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5775D2D02C58B3E10023B1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5775D2D82C58B4010023B1A4 /* EasyPop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyPop.swift; sourceTree = "<group>"; };
+		5775D2DA2C58B4FC0023B1A4 /* PopQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopQueue.swift; sourceTree = "<group>"; };
+		5775D2DD2C58C9F00023B1A4 /* EasyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyDemo.swift; sourceTree = "<group>"; };
+		5775D2E02C58D4D10023B1A4 /* PopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopManager.swift; sourceTree = "<group>"; };
+		5775D2E22C58D5AE0023B1A4 /* PopType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopType.swift; sourceTree = "<group>"; };
+		5775D2E42C59DBF30023B1A4 /* ToastPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastPop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 		5775D2B62C58B3DF0023B1A4 = {
 			isa = PBXGroup;
 			children = (
+				5775D2D62C58B4010023B1A4 /* Sources */,
 				5775D2C12C58B3DF0023B1A4 /* Demo */,
 				5775D2C02C58B3DF0023B1A4 /* Products */,
 			);
@@ -56,6 +69,7 @@
 		5775D2C12C58B3DF0023B1A4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				5775D2DC2C58C9D90023B1A4 /* Demo */,
 				5775D2C22C58B3DF0023B1A4 /* AppDelegate.swift */,
 				5775D2C42C58B3DF0023B1A4 /* SceneDelegate.swift */,
 				5775D2C62C58B3DF0023B1A4 /* ViewController.swift */,
@@ -65,6 +79,43 @@
 				5775D2D02C58B3E10023B1A4 /* Info.plist */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		5775D2D62C58B4010023B1A4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5775D2D72C58B4010023B1A4 /* EasyPop */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		5775D2D72C58B4010023B1A4 /* EasyPop */ = {
+			isa = PBXGroup;
+			children = (
+				57AC0BD82C5A047400595935 /* Pop */,
+				5775D2D82C58B4010023B1A4 /* EasyPop.swift */,
+				5775D2E42C59DBF30023B1A4 /* ToastPop.swift */,
+			);
+			path = EasyPop;
+			sourceTree = "<group>";
+		};
+		5775D2DC2C58C9D90023B1A4 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5775D2DD2C58C9F00023B1A4 /* EasyDemo.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		57AC0BD82C5A047400595935 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				5775D2DA2C58B4FC0023B1A4 /* PopQueue.swift */,
+				5775D2E02C58D4D10023B1A4 /* PopManager.swift */,
+				5775D2E22C58D5AE0023B1A4 /* PopType.swift */,
+			);
+			path = Pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5775D2C72C58B3DF0023B1A4 /* ViewController.swift in Sources */,
+				5775D2E32C58D5AE0023B1A4 /* PopType.swift in Sources */,
+				5775D2D92C58B4010023B1A4 /* EasyPop.swift in Sources */,
+				5775D2DE2C58C9F00023B1A4 /* EasyDemo.swift in Sources */,
+				5775D2E52C59DBF30023B1A4 /* ToastPop.swift in Sources */,
 				5775D2C32C58B3DF0023B1A4 /* AppDelegate.swift in Sources */,
+				5775D2DB2C58B4FC0023B1A4 /* PopQueue.swift in Sources */,
+				5775D2E12C58D4D20023B1A4 /* PopManager.swift in Sources */,
 				5775D2C52C58B3DF0023B1A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +357,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +386,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

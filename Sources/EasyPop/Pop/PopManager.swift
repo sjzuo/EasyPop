@@ -102,9 +102,23 @@ class PopManager {
             containerFrame.origin.y = scrreen_height - showFrame.size.height - popView.config.showPosition
             containerFrame.origin.x = (scrreen_width - popView.frame.size.width) / 2
         }else if popView.config.direction == .left {
+            hiddenFrame.origin.y = (scrreen_height - popView.frame.size.height) / 2
+            hiddenFrame.origin.x = -popView.frame.origin.x
             
+            showFrame.origin.x = 0
+            showFrame.origin.y = (scrreen_height - popView.frame.size.height) / 2
+            
+            showFrame.origin.x = 0
+            showFrame.origin.y = (scrreen_height - popView.frame.size.height) / 2
         }else if popView.config.direction == .right {
+            hiddenFrame.origin.x =  hiddenFrame.width
+            hiddenFrame.origin.y = (scrreen_height - popView.frame.size.height) / 2
             
+            showFrame.origin.x = 0
+            showFrame.origin.y = (scrreen_height - popView.frame.size.height) / 2
+            
+            containerFrame.origin.x = scrreen_width - showFrame.size.width
+            containerFrame.origin.y = (scrreen_height - popView.frame.size.height) / 2
         }
         
         popView.frame = hiddenFrame

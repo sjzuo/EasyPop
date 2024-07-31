@@ -48,11 +48,15 @@ public class PopConfig {
     public var direction: PopDirection = .center
     // 弹窗的优先级
     public var priority: PopPriority = .normal
+    // 动画的时间
     public var animationTime: CGFloat = 0.5
     
+    // 是否从屏幕边缘，动画到相应位置
     public var isShowFromEdge: Bool = true
+    // 距离屏幕边缘的位置，只对top 和 bottom起作用
     public var showPosition: CGFloat = 0.0
     
+    // 遮罩相关
     public var isMask: Bool = true
     public var isTapMaskHidden: Bool = false
     public var maskColor: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
