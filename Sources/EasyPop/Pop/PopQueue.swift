@@ -60,17 +60,11 @@ public class PopQueue {
             manager.hidden(popView: type) { [weak self] in
                 guard let self = self else { return }
                 if type.config.priority == .high || type.config.priority == .interFirst || type.config.priority == .unique {
-                    self.highList = self.highList.filter({ pop in
-                        pop.config.identifier != type.config.identifier
-                    })
+                    self.highList = self.highList.filter({ $0.config.identifier != type.config.identifier })
                 }else if type.config.priority == .normal {
-                    self.normalList = self.normalList.filter({ pop in
-                        pop.config.identifier != type.config.identifier
-                    })
+                    self.normalList = self.normalList.filter({ $0.config.identifier != type.config.identifier })
                 }else if type.config.priority == .low {
-                    self.lowList = self.lowList.filter({ pop in
-                        pop.config.identifier != type.config.identifier
-                    })
+                    self.lowList = self.lowList.filter({ $0.config.identifier != type.config.identifier })
                 }
             }
         }else {

@@ -14,11 +14,15 @@ public class ToastConfig {
     
     var toastMaskColor: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
     var toastMaskCornerRadius: CGFloat = 5.0
-    var toastDuration: CGFloat = 3.0
+    var toastDuration: CGFloat = 2.0
     var toastMaxWidth: CGFloat = 300.0
 }
 
 public class ToastPop: UIView, PopType {
+    public var toastText: String = "" {
+        didSet { titleLabel.text = toastText }
+    }
+    
     public var toastConfig: ToastConfig = ToastConfig() {
         didSet {
             titleLabel.textColor = toastConfig.titleColor
@@ -36,7 +40,6 @@ public class ToastPop: UIView, PopType {
     
     private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.text = "我知道了，请见谅"
         titleLabel.textColor = toastConfig.titleColor
         titleLabel.font = toastConfig.titleFont
         titleLabel.numberOfLines = 0
@@ -60,7 +63,7 @@ public class ToastPop: UIView, PopType {
         self.config.isMask = false
         self.config.direction = .center
         self.config.animationTime = 0.2
-        self.config.priority = .high
+        self.config.priority = .interFirst
         
         addSubview(toastMaskView)
         toastMaskView.addSubview(titleLabel)

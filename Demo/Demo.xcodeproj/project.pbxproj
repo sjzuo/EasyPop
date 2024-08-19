@@ -93,9 +93,9 @@
 		5775D2D72C58B4010023B1A4 /* EasyPop */ = {
 			isa = PBXGroup;
 			children = (
+				57AC0BD92C5A27EC00595935 /* Toast */,
 				57AC0BD82C5A047400595935 /* Pop */,
 				5775D2D82C58B4010023B1A4 /* EasyPop.swift */,
-				5775D2E42C59DBF30023B1A4 /* ToastPop.swift */,
 			);
 			path = EasyPop;
 			sourceTree = "<group>";
@@ -116,6 +116,14 @@
 				5775D2E22C58D5AE0023B1A4 /* PopType.swift */,
 			);
 			path = Pop;
+			sourceTree = "<group>";
+		};
+		57AC0BD92C5A27EC00595935 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				5775D2E42C59DBF30023B1A4 /* ToastPop.swift */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
